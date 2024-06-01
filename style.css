@@ -1,0 +1,140 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(240, 240, 240);
+  margin: 0;
+  padding: 0;
+  }
+
+header {
+  position: sticky;
+  top: 0;
+  height: 50px;
+  background-color: rgb(103, 172, 145);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  }
+
+.nav_link {
+  text-decoration: none;
+  margin: 0 20px;
+  color: rgb(255, 255, 255);
+}
+
+.nav_link:hover {
+color: rgb(61, 86, 69);
+}
+
+.cover {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+  border-radius: 0 0 20px 20px; 
+  overflow: hidden;
+}
+
+.text_cover {
+  position: absolute;
+  right: 150px;
+  bottom: 0;
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  z-index: 3;
+}
+
+.img_cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  
+}
+
+.cover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.07) 55%, rgba(16, 20, 22, 0.8));
+  z-index: 2;
+}
+
+.main_flexbox {
+  margin: 0 100px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.main {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.anchor {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+.heading {
+  font-size: 1.4em;
+  padding: 9px 15px;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;  
+  display: block;
+  border: 0.5px solid rgb(158, 197, 184);
+  border-radius: 20px;
+}
+
+.main_text {
+  padding-left: 30px;
+}
+
+.main_list {
+  padding-left: 60px;
+}
+
+li {
+  position: relative;
+  list-style: none;
+}
+
+li::before {
+  content: "\2013";
+  position: absolute;
+  left: -20px;
+}
+
+footer {
+  background-color: rgb(158, 197, 184);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 30px;
+  padding-right: 30px;
+  color:rgb(255, 255, 255);
+  font-size: 0.85em;
+}
+
+.link {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+.link:visited {
+color: rgb(255, 255, 255);
+}
+
+.link:hover {
+  color: rgb(61, 86, 69);
+}
+
+.contacts {
+  line-height:0.7em;
+}
